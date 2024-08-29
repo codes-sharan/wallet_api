@@ -14,6 +14,7 @@ app.use(express.json());
 //Models
 
 require("./models/users.model");
+require("./models/transactions.model");
 
 mongoose
   .connect(process.env.mongo_connect, {})
